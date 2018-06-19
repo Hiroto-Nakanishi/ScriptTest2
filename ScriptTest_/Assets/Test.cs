@@ -3,6 +3,17 @@ using System.Collections;
 
 public class Test : MonoBehaviour
 {
+    int mp = 53;
+
+    //Magic関数
+    void Magic() {
+
+        for(mp = 53; mp > 0 ; mp = mp-5) {
+            Debug.Log("魔法攻撃をした。残りMPは" + mp + "。");
+        }
+        Debug.Log("MPが足りないため魔法が使えない。");
+    }
+
 
     // Use this for initialization
     void Start()
@@ -29,7 +40,12 @@ public class Test : MonoBehaviour
             Debug.Log(points[i]);
         }
 
+        Magic();    
+
     }
+
+
+
 
     // Update is called once per frame
     void Update()
